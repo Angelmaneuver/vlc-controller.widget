@@ -1,0 +1,6 @@
+{
+  "name": "VLC Controller",
+  "description": "Übersicht widget to control VLC running on a remote machine (e.g. Raspberry pi) via HTTP request. This widget allows you to control VLC on a remote machine from your desktop.",
+  "author": "Angelmaneuver",
+  "email": ""
+}
