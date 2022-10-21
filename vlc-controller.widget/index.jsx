@@ -207,10 +207,10 @@ export const render           = (props, dispatch) => {
 						);
 					}}
 					onClickVolumeUp   = {() => {
-						if (VOLUME.MIN === props.volume) { return; } volume(dispatch, '+10');
+						if (VOLUME.MAX <= props.volume + 10) { volume(dispatch, VOLUME.MAX.toString()); } volume(dispatch, '+10');
 					}}
 					onClickVolumeDown = {() => {
-						if (VOLUME.MIN === props.volume) { return; } volume(dispatch, '-10');
+						if (VOLUME.MIN >= props.volume - 10) { volume(dispatch, VOLUME.MIN.toString()); } volume(dispatch, '-10');
 					}}
 					volume            = { props.volume }
 				/>
